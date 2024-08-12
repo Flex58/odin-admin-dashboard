@@ -140,17 +140,42 @@ body {
     display: grid;
     grid-row: 1/2;
 }
-.item {
+.item,
+.headline {
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: .5fr 1fr;
     justify-self: center;
 }
 
+.item {
+    align-items: center;
+    padding-top: .5rem;
+}
+.first-section,
+.second-section {
+    padding-top: 5rem;
+}
 h1 {
     margin: 0;
+}
+
+.main h1 {
     padding-bottom: 1rem;
 }
 
 p {
     margin: 0;
 }
+
+.headline img {
+    width: clamp(50px, 50%, 100px);
+}
+
+img {
+    width: clamp(25px, 35%, 30px);
+}
+
+ .sidebar img {
+    filter: invert(88%) sepia(1%) saturate(3209%) hue-rotate(204deg) brightness(107%) contrast(106%);
+}
+
