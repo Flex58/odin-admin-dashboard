@@ -43,12 +43,19 @@ body {
 .header-left {
     display: grid;
     grid-template-columns: .5fr 4fr;
+    align-items: center;
+}
+
+.header-left img {
+    justify-self: end;
+    padding-right: 10px;
 }
 
 .header-right {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     justify-items: center;
+    align-items: center;
 }
 .nav {
     display: grid;
@@ -132,8 +139,8 @@ body {
     display: grid;
     grid-template-rows: 1fr 1fr;
     color: #f5f3ff;
-    padding-left: 1rem;
     padding: 1rem;
+    padding-left: 2rem;
 }
 
 .container {
@@ -143,14 +150,21 @@ body {
 .item,
 .headline {
     display: grid;
-    grid-template-columns: .5fr 1fr;
     justify-self: center;
 }
 
 .item {
     align-items: center;
     padding-top: .5rem;
+    font-weight: 600;
+    grid-template-columns: .5fr 1fr;
 }
+
+.headline {
+    align-items: center;
+    grid-template-columns: .75fr 1fr;
+}
+
 .first-section,
 .second-section {
     padding-top: 5rem;
@@ -170,6 +184,7 @@ p {
 .headline img {
     width: clamp(50px, 50%, 100px);
 }
+
 
 img {
     width: clamp(25px, 35%, 30px);
