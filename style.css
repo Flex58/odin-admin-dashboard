@@ -1,7 +1,16 @@
+@font-face {
+    font-family: "Roboto";
+    src: url("./fonts/RobotoSlab-VariableFont_wght.woff2") format("woff2");
+    font-weight: 100 900;
+    font-style: normal; 
+}
+
 html {
     height: 100vh;
     width: 100vw;
+    font-family: "Roboto";
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -122,6 +131,9 @@ body {
     grid-row: 1/-1;
     display: grid;
     grid-template-rows: 1fr 1fr;
+    color: #f5f3ff;
+    padding-left: 1rem;
+    padding: 1rem;
 }
 
 .container {
