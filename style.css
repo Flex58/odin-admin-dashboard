@@ -144,12 +144,32 @@ button:hover {
 }
 
 .projects .card {
+    display: flex;
+    flex-direction: column;
     background-color: #f5f3ff;
     color: black;
     text-align: left;
     height: 250px;
     border-radius: 0.5rem;
-    box-shadow: 2px 4px 7px -1px #5B21B6;
+    padding-left: 2rem;
+    box-shadow: inset 10px 0px 0px -1px #ac3b27, 2px 4px 7px -1px #5B21B6;
+}
+.card div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    gap: 20px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+.main h2 {
+    margin: 0;
+    padding-top: 5%;
+}
+
+.main p {
+    color: #3f3f3f;
 }
 
 .announcements-wrapper {
@@ -161,9 +181,19 @@ button:hover {
     background-color: #f5f3ff;
     color: black;
     text-align: left;
-    padding: 1rem;
+    padding: 2rem 1.4rem;
     border-radius: 0.5rem;
     box-shadow: 2px 4px 7px -1px #5B21B6;
+}
+
+.announcements h3 {
+    margin: 0;
+    padding-top: 5px;
+    font-size: 1.1rem;
+}
+
+.announcements p {
+    padding-bottom: 10px;
 }
 
 .trending-wrapper {
@@ -221,7 +251,9 @@ h1 {
 }
 
 .main h1 {
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    font-size: 1.5rem;
+    font-weight: 500;
 }
 
 p {
