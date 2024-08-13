@@ -191,7 +191,7 @@ button:hover {
     box-shadow: 2px 4px 7px -1px #5B21B6;
 }
 
-.announcements h3 {
+.main h3 {
     margin: 0;
     padding-top: 5px;
     font-size: 1.1rem;
@@ -209,7 +209,19 @@ button:hover {
 .trending {
     background-color: #f5f3ff;
     color: black;
+    border-radius: 0.5rem;
+    padding: 2rem 1.4rem;
     box-shadow: 2px 4px 7px -1px #5B21B6;
+}
+
+.section {
+    display: flex;
+    padding-bottom: 10px;
+    gap: 20px;
+}
+
+.section:last-child {
+    padding-bottom: 0px;
 }
 
 .sidebar {
@@ -282,8 +294,16 @@ img {
     border-radius: 50%;
     object-fit: cover;
     width: clamp(30px, 50%, 50px);
-    object-position: 5% 100%;
     aspect-ratio: 1/1;
+}
+
+.section .profile {
+    max-height: clamp(30px, 50%, 50px);
+    align-self: center;
+}
+
+.header-container .profile {
+    object-position: 5% 100%;
 }
 
 .big {
