@@ -54,6 +54,13 @@ body {
     padding-right: 10px;
 }
 
+input {
+    border-radius: 20px;
+    background-color: #c4b5fd;
+    border: #f5f3ffcc solid 1px;
+    padding: 5px 0px;
+}
+
 .header-right {
    display: flex;
    justify-content: flex-end;
@@ -84,7 +91,7 @@ body {
 }
 
 .nav-left>div div:last-child {
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 600;
 }
 
@@ -92,6 +99,24 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 1rem;
+}
+
+button {
+    border-radius: 20px;
+    box-sizing: border-box;
+    color: #f5f3ff;
+    font-family: "Roboto";
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 10px 1px;
+    background-color:#6d28d9;
+    border: none;
+    outline: none;
+}
+
+button:hover {
+    box-shadow: inset 0px 0px 22px 6px #5B21B6;
+    cursor: pointer;
 }
 
 .main {
